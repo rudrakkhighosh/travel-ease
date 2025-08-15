@@ -1,44 +1,82 @@
-Travel-Ease: A Tourism Website
-Travel-Ease is a modern, responsive tourism website designed to help users explore popular tourist destinations and leave reviews for various locations.
 
-Features
-Homepage: Displays an overview of the website, with featured destinations and popular tourist spots.
-User Authentication: Users can register, log into their accounts.
-Tourism Destinations: Browse a list of tourist destinations and itineraries.
-Review System: Logged-in users can leave reviews for their favorite places.
-Responsive Design: Optimized for both desktop and mobile devices.
-Tech Stack
-Frontend: HTML, CSS, JavaScript, React.js
-Backend: Node.js, Express.js, MongoDB
-Database: MongoDB (used to store user data, reviews, and destination information)
-Installation
-Prerequisites
-Node.js (v14 or later)
-Python (v3.6 or later)
-MongoDB (for local development, or MongoDB Atlas for cloud database)
-Git (for version control)
-To Run Locally
-Install dependencies for both client and server:
+# Travel-Ease: A Tourism Website
 
-For the client (React-based frontend):
+**Travel-Ease** is a modern, responsive tourism website designed to help users explore popular tourist destinations and share reviews for various locations.
 
+## ✨ Features
+- Homepage – Overview with featured destinations and popular tourist spots.
+- User Authentication – Register and log in securely.
+- Tourism Destinations – Browse tourist destinations and itineraries.
+- Review System – Logged-in users can leave reviews for their favorite places.
+- Responsive Design– Works seamlessly on both desktop and mobile devices.
+
+## 🛠 Tech Stack
+- Frontend: HTML, CSS, JavaScript, React.js  
+- Backend: Node.js, Express.js, MongoDB  
+- Database:MongoDB (local or MongoDB Atlas for cloud)  
+
+## 📦 Installation
+
+
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/rudrakkhighosh/travel-ease.git
+cd travel-ease
+````
+
+### 2️⃣ Install Dependencies
+
+#### For the client (React frontend):
+
+```bash
 cd client
-npm i
-For the server (Node.js backend):
+npm install
+```
 
+#### For the server (Node.js backend):
+
+```bash
 cd ../server
-npm i
-Run the backend:
+npm install
+```
 
-In the server folder, run:
+---
+
+### 3️⃣ Run the Backend
+
+```bash
 cd server
-set PORT=3000
+set PORT=3000   # On Windows
+# export PORT=3000  # On macOS/Linux
 node index.js
-Run the frontend:
+```
 
-Open a new terminal, navigate to the client folder, and run:
+---
+
+### 4️⃣ Run the Frontend
+
+Open a new terminal:
+
+```bash
 cd client
 npm run dev
-Access the Website:
+```
 
-After running both the backend and frontend, you can access the website by opening the link provided in the terminal where you ran the node index.js command.
+---
+
+### 5️⃣ Access the Website
+
+After running both the backend and frontend, open the link provided in the terminal (usually something like):
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📌 Notes
+
+Make sure MongoDB is running locally, or configure MongoDB Atlas in your backend `.env` file.
+Default backend port is **3000** (can be changed in `index.js` or environment variables).
+
